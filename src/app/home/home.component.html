@@ -1,0 +1,22 @@
+<html>
+<div class="container">
+  <div><h3>Your team</h3></div>
+  <div class="col-6 teampicker-result-playerteam">
+    <div class="teampicker-result-list">
+      <div *ngIf="heroes">
+        <div *ngFor="let hero of heroes">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="row">
+                <div class="col-xs-2">
+                  <img class="champ_portrait" src="./assets/HeroIcons/{{hero.ImageURL}}.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</html>
